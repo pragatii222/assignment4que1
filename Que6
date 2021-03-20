@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Toggle switch</title>
+  </head>
+  <body>
+    <img src="bulboff.jpg" id="img" width="250px" height="300px">
+    <input type="button" value="ON" id="toggle">
+    <script type="text/javascript">
+      document.getElementById('toggle').onclick=function(){
+        var onoff=document.getElementById('toggle').value;
+        if(onoff=='ON')
+        {
+          document.getElementById('img').src="bulbon.jpg";
+          document.getElementById('toggle').value="OFF";
+        }
+        else
+        {
+          document.getElementById('img').src="bulboff.jpg";
+          document.getElementById('toggle').value="ON";
+        }
+      }
+    </script>
+  </body>
+</html>
